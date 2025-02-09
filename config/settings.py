@@ -44,6 +44,9 @@ INSTALLED_APPS = [
     "rest_framework",
     "rest_framework_simplejwt",
     "api.v1.books",
+    "api.v1.authors",
+    "api.v1.genres",
+    "api.v1.user_ratings",
     "api.v1.authentication",
 ]
 

@@ -1,23 +1,8 @@
 from rest_framework.serializers import ModelSerializer
-from .models import Book, Author, Genre, UserRating
 
-
-class AuthorSerializer(ModelSerializer):
-    class Meta:
-        model = Author
-        fields = "__all__"
-
-
-class GenreSerializer(ModelSerializer):
-    class Meta:
-        model = Genre
-        fields = "__all__"
-
-
-class UserRatingSerializer(ModelSerializer):
-    class Meta:
-        model = UserRating
-        fields = "__all__"
+from api.v1.authors.serializers import AuthorSerializer
+from api.v1.genres.serializers import GenreSerializer
+from .models import Book
 
 
 class BookSerializer(ModelSerializer):
