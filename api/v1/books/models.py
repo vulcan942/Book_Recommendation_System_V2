@@ -12,7 +12,7 @@ class Book(models.Model):
     author = models.ForeignKey(Author, on_delete=models.CASCADE, related_name="books")
     genres = models.ManyToManyField(Genre, related_name="books")
     description = models.TextField()
-    rating = models.FloatField(default=0.0)
+    rating = models.FloatField(default=2.5)
     image_url = models.URLField(blank=True, null=True)
     published_date = models.DateField(blank=True, null=True)
 
